@@ -46,17 +46,24 @@ a:hover {
   font-size: 72px;
   line-height: 0.75;
   margin: 100px 0 30px 0;
-  text-align: left;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo span {
   color: #00E472;
   font-weight: 100;
+  position: absolute;
+  right: -26px;
+  top: -7px;
+  font-size: 77px;
 }
 
 footer.wrapper {
   font-size: 14px;
-  color: #555;
   text-align: center;
   font-style: italic;
   margin: 50px auto;
