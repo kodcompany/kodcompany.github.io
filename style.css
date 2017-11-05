@@ -60,6 +60,11 @@ a:hover {
   right: -26px;
   top: -7px;
   font-size: 77px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
 }
 
 footer.wrapper {
@@ -67,4 +72,49 @@ footer.wrapper {
   text-align: center;
   font-style: italic;
   margin: 50px auto;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
 }
