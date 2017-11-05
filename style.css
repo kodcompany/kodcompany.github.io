@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  color: hsl(171, 44%, 20%);
+  background: hsl(171, 44%, 95%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Vollkorn';
+  font-weight: 900;
+}
+
+a, a:visited {
+  color: #000;
+  border-bottom: 5px solid #FFDC00;
+  transition: all ease 180ms;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFDC00;
+  border-bottom: 0;
+}
+
+.prelude {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.wrapper {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 72px;
+  line-height: 0.75;
+  margin: 100px 0 30px 0;
+  text-align: left;
+}
+
+footer.wrapper {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+  margin: 50px auto;
+}
