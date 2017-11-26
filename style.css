@@ -75,6 +75,11 @@ a:hover {
   border-radius:4px;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
+}
+
+#open-popup:hover {
+  
 }
 
 footer.wrapper {
