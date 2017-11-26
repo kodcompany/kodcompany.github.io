@@ -22,12 +22,23 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <link rel="author" href="humans.txt">
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"e4688cdff78e3b99faff988b0","lid":"1d33c9bf0b"}) })</script>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">
+      function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"e4688cdff78e3b99faff988b0","lid":"1d33c9bf0b"}) })
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+      };
+      document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+    </script>
   </head>
 <body>
   <header class="wrapper">
     <h1 class="logo">Kod <span class="caret">|</span></h1>
-
+    <p>Kod is a full stack JS editor for the iPad. Yes, it allows you to do full Node.js with webpack and everything.</p>
+    <p>We're in closed beta right now, hoping to open up in the beginning of 2018. Want to be the first to try it out?
+    <br />
+    First come, first serve.</p>
+    <button id="open-popup">Join the waiting list</button>
   </header>
   <section class="wrapper">
 
