@@ -11,6 +11,7 @@ body {
   font-family: 'Ubuntu mono';
   font-size: 18px;
   font-weight: 400;
+  line-height: 150%;
   color: #fff;
   background: hsl(155, 20%, 20%);
 }
@@ -21,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a, a:visited {
   color: #00E472;
-  border-bottom: 5px solid #FFDC00;
+  border-bottom: 3px solid #FFDC00;
   transition: all ease 180ms;
   text-decoration: none;
 }
